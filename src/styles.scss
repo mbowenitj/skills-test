@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@import './styles/variables/_variables-brand.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+article h1 {
+    margin: 1rem 0;
+}
+
+.bg-image {
+    background-image: url(../src/assets/images/la-mountains.png);
+    height: 750px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.tabs-bg-image {
+    background-image: url(../src/assets/images/schedule.png);
+    height: 750px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel .thumbs-wrapper {
+    margin: 0px !important;
+    position: relative;
+    margin-top: -270px !important;
+    padding: 52px;
+    background: linear-gradient(0deg, rgba(56,69,93,255), rgba(56,69,93,255));
+    opacity: 0.6;
+}
+
+.carousel .thumb {
+    width: 128px !important;
+    margin-right: 138px !important;
+    overflow: visible !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.carousel .thumb img {
+    width: 256px !important;
+    height: 150px;
+}
+
+.carousel-slider {
+    padding-top: 15px;
+}
+
+.carousel .slide img {
+    height: 750px;
+}
+
+.first-number-header {
+    color: $brand-primary-light;
+    font-family: 'Oswald';
+    font-size: 136px;
+    font-weight: 700;
+}
+
+.second-number-header {
+    color: $brand-secondary;
+    font-family: 'Oswald';
+    font-size: 136px;
+    font-weight: 700;
+}
+
+.square {
+    padding: 0px 8px 0px 8px;
+    background-color: $brand-secondary;
+    color: $brand-secondary;
+}
+
+.history-header-container {
+    font-family: 'Oswald';
+    font-weight: bold;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.history-header {
+    font-family: 'Oswald';
+    font-weight: bold;
+    position: relative;
+    top: -26px;
+    right: 20px;
+    font-size: 36px;
+    color: $brand-primary;
+}
+
+.history-banner-container {
+    position: absolute;
+    width: 100%;
+}
+
+.history-banner-text {
+    padding-top: 83px;
+    text-align: left;
+}
+
+.history-text {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    width: 58%;
+    margin: 0 auto;
+}
+
+.accordion {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+.accordion__content {
+    order: 1;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.accordion__label {
+    display: block;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $brand-primary;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.accordion__radio {
+    display: none;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion input[type="radio"] + label {
+    color: $brand-secondary;
+    z-index: 1;
+}
+
+.accordion input[type="radio"]:checked + label {
+    background-color: $brand-secondary;
+    font-weight: 700;
+    border-bottom: none;
+    color: $brand-primary;
+}
+
+.accordion input[type="radio"]:checked + label + .accordion__content {
+    display: flex;
+    margin-right: 0;
+}
+
+.accordion__schedule__container {
+    background-color: $brand-white;
+    position: relative;
+    top: 130px;
+    left: 23%;
+    padding: 0px 30px 20px 0px;
+    opacity: 0.8;
+}
+
+.accordion__content__image {
+    max-width: 100%;
+    max-height: 88%;
+    margin: 3%;
+    background-color: teal;
+}
+
+.carousel.carousel-slider .control-arrow {
+    display: none;
+}
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.accordion__content__text__title {
+    color: $brand-primary;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 3%;
+}
+
+.schedule-container {
+    list-style-type: none;
+    font-family: 'Oswald';
+    padding-left: 40px;
+}
+
+.schedule-header {
+    font-size: 32px;
+}
+
+.schedule-venue {
+    padding-left: 20px;
+}
+
+.footer-container {
+    background-color: $brand-primary;
+    padding: 10px 0px 10px 0px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0.5rem 0rem;
+    color: black;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 13px;
+    opacity: 0.2;
+}
+
+.footer-logo-text {
+    color: $brand-white;
+    font-size: 21px;
+}
+
+.footer-logo-text-1 {
+    color: $brand-white;
+    font-size: 23px;
+}
+
+.footer-text {
+    margin-left: auto;
+    font-size: 12px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.section-header {
+    width: 60%;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 1130px) {
+    .tab-content>.tab-pane {
+        display: block;
+        opacity: 1;
+    }
+
+    .history-banner-text1 {
+        position: relative;
+        left: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .bg-image {
+        background-image: url(../src/assets/images/la-angeles.png);
+        height: 550px;
+        background-position: 40%;
+    }
+
+    .mobile-show {
+        visibility: visible !important;
+        width: 410px;
+        position: absolute;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .carousel .slide img {
+        width: auto !important;
+    }
+
+    .accordion {
+        border: 1px solid var(--color-five);
+    }
+
+    .accordion-tab--status {
+        display: inline;
+    }
+
+    .accordion__content,
+  .accordion__label {
+        order: initial;
+    }
+
+    .accordion__content {
+        flex-direction: column;
+    }
+
+    .accordion__label {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        padding: 5% 6% 5% 6%;
+    }
+
+    .accordion__schedule__container {
+        top: 15px;
+        left: 0;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .accordion__content__image {
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    .accordion__content__text {
+        font-size: 0.9em;
+        margin: 4% 5% 4% 5%;
+    }
+
+    .accordion__content__text__title {
+        margin: 2% 0 2% 0;
+    }
+
+    .accordion input[type="radio"] + label span:after {
+        content: '+';
+    }
+
+    .accordion input[type="radio"]:checked + label span:after {
+        content: '—';
+    }
+
+    .accordion input[type="radio"]:checked + label {
+        border: none;
+    }
+
+    .accordion input[type="radio"]:checked + label + .accordion {
+        border: none;
+    }
+
+    .accordion input[type="radio"]:checked + label + .accordion__content {
+        border: none;
+        margin-bottom: 28px;
+    }
+
+    .tabs-bg-image {
+        height: 500px;
+    }
+
+    .history-banner-text {
+        padding-top: 0;
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    .slider-wrapper {
+        height: 550px;
+    }
+
+    .history-text {
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .first-number-header {
+        font-size: 96px;
+    }
+
+    .history-header-container {
+        width: 50%;
+    }
+
+    .thumbs-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 901px) and (max-width:1124px) {
+    .history-banner-text {
+        position: relative;
+        left: 58px;
+    }
+}
+
+@media (max-width: 584px) {
+    .accordion__schedule__container {
+        width: 96%;
+    }
+
+    .tabs-bg-image {
+        height: 436px;
+    }
+
+    .navigation {
+        width: 96%;
+    }
+
+    .footer {
+        width: 96%;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+
+    .footer-text {
+        font-size: 9px;
+    }
+
+    .footer-logo-text-1 {
+        font-size: 17px;
+    }
+
+    .footer-logo-text {
+        font-size: 15px;
+    }
+
+    .history-header {
+        font-size: 20px;
+    }
+
+    .section-header {
+        width: 100%;
+    }
+
+    .second-number-header {
+        font-size: 96px;
+    }
+
+    .mobile-show {
+        width: 260px;
+        top: 18%;
+    }
+}
