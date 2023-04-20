@@ -23,16 +23,16 @@ class ImageGallery extends React.Component {
                             </p>
                         </div>
                     </div>  
-                         <img src={require('../assets/images/peak.png')} />
+                         <img src={require('../assets/images/peak.png')} alt="Peak Season"/>
                     </div>
                     <div>
-                        <img src={require('../assets/images/los-angels.png')} />
+                        <img src={require('../assets/images/los-angels.png')} alt="Los Angeles Mountain"/>
                     </div>
                     <div>
-                         <img src={require('../assets/images/hiking.png')} />
+                         <img src={require('../assets/images/hiking.png')} alt="Site Seeing"/>
                     </div>
                     <div>
-                         <img src={require('../assets/images/hiking-1.png')} />
+                         <img src={require('../assets/images/hiking-1.png')} alt="Hiking"/>
                     </div>
                 </Carousel>
             </div>
