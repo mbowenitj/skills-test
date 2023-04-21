@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="bg-image">
         <nav className="navigation">
           <a href="/" className="brand-name">
-            <img src={require("../assets/images/logo.png")} className="logo" />
+            <img src={require("../assets/images/logo.png")} className="logo" alt="Coalition Technologies Logo"/>
           </a>
           <button
             className="hamburger"
@@ -62,7 +62,7 @@ export default function Navbar() {
       </div>
       <nav className="navigation">
         <a href="/" className="brand-name">
-          <img src={require("../assets/images/logo.png")} className="logo" />
+          <img src={require("../assets/images/logo.png")} className="logo" alt="Coalition Technologies Logo"/>
         </a>
         <h4 className="logo-title">
           <span className="logo-text-1">LOSANGELES</span>
